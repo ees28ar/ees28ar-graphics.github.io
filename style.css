@@ -192,6 +192,8 @@
   font-size: 4rem;
   font-weight: var(--texto-peso-grueso);
   color: var(--texto-primario);
+  z-index: 9999;
+  position: relative;
 }
 
 /*responsive*/
