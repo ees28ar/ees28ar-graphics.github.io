@@ -178,7 +178,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 120px; /* Ajusta este valor según sea necesario */
+  margin-top: 200px; /* Ajusta este valor según sea necesario */
   padding-bottom: 20px; /* Agrega un espacio inferior */
   font-size: 2rem;
 }
