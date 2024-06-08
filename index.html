@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Design</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+          />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <header class="encabezado">
+        <nav class="navegacion">
+          <a class="navegacion__enlace" href="#presentacion">
+            <h2 class="navegacion__titulo">DESIGN PORTOFOLIO</h2>
+          </a>
+          <ul class="enlaces">
+            <li class="enlaces__item">
+              <a class="enlaces__enlace" href="#presentacion">Inicio</a>
+            </li>
+            <li class="enlaces__item">
+              <a class="enlaces__enlace" href="#sobre-mi">Sobre mi</a>
+            </li>
+            <li class="enlaces__item">
+              <a class="enlaces__enlace" href="#proyectos">Portfolio Desarrollador WEB</a>
+            </li>
+          </ul>
+        </nav>
+      </header> 
+      <main class="principal">
+      <article class="articulo proyectos" id="proyectos">
+       <h2>    </h2>
+       <h2>    </h2>
+        <h2 class="articulo__titulo">Mis proyectos</h2>
+        <div class="contenedor_tarjetas_grid">
+            <article class="tarjeta"
+            aria-label="presentacion de proyecto personal">
+                <img class="tarjeta__imagen"
+                src="./assets/images/1.png" alt="imagen del proyecto"
+                title="proyecto1"
+                />
+                
+            </article>
+
+            <article class="tarjeta"
+            aria-label="presentacion de proyecto personal">
+                <img class="tarjeta__imagen"
+                src="./assets/images/2.png" alt="imagen del proyecto"
+                title="proyecto2"
+                />
+                
+            </article>
+
+            <article class="tarjeta"
+            aria-label="presentacion de proyecto personal">
+                <img class="tarjeta__imagen"
+                src="./assets/images/3.png" alt="imagen del proyecto"
+                title="proyecto3"
+                />
+                
+            </article>
+
+            <article class="tarjeta"
+            aria-label="presentacion de proyecto personal">
+                <img class="tarjeta__imagen"
+                src="./assets/images/4.png" alt="imagen del proyecto"
+                title="proyecto4"
+                />
+                
+            </article>
+
+            <article class="tarjeta"
+            aria-label="presentacion de proyecto personal">
+                <img class="tarjeta__imagen"
+                src="./assets/images/5.png" alt="imagen del proyecto"
+                title="proyecto5"
+                />
+                
+            </article>
+
+            <article class="tarjeta"
+            aria-label="presentacion de proyecto personal">
+                <img class="tarjeta__imagen"
+                src="./assets/images/6.png" alt="imagen del proyecto"
+                title="proyecto6"
+                />
+                
+            </article>
+
+            <article class="tarjeta"
+            aria-label="presentacion de proyecto personal">
+                <img class="tarjeta__imagen"
+                src="./assets/images/7.png" alt="imagen del proyecto"
+                title="proyecto7"
+                />
+                
+            </article>
+            <article class="tarjeta"
+            aria-label="presentacion de proyecto personal">
+                <img class="tarjeta__imagen"
+                src="./assets/images/8.png" alt="imagen del proyecto"
+                title="proyecto8"
+                />
+                
+            </article>
+            <article class="tarjeta"
+            aria-label="presentacion de proyecto personal">
+                <img class="tarjeta__imagen"
+                src="./assets/images/9.png" alt="imagen del proyecto"
+                title="proyecto9"
+                />
+                
+            </article>
+        </div>
+      </article>
+    </main>
+    <footer class="pie_de_pagina" role="contentinfo">
+      <div class="pie_de_pagina__copyright">
+          <p>My website is coming soon</p>
+      </div>
+      <div class="pie_de_pagina__contador">
+          <p id="contador">Loading...</p>
+      </div>
+  </footer>
+  <script>
+    // Establecer la fecha de lanzamiento
+    var launchDate = new Date("Dec 31, 2024 23:59:59").getTime();
+
+    // Actualizar el contador cada segundo
+    var x = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = launchDate - now;
+
+        // Cálculos de tiempo para días, horas, minutos y segundos
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Mostrar el resultado en el elemento con id="contador"
+        document.getElementById("contador").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+        // Si la cuenta atrás ha terminado, escribe algo
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("contador").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>
+   
+    
+</body>
+</html>
