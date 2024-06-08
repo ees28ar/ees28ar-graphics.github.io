@@ -8,16 +8,9 @@
     --color-primario: #2c2acb;
     --color-primario-apagado: #2422a3;
  
-
-    
-  
     /* sizes */
     --presentacion-titulo-tamanio: 4rem;
-  
-   
     --titulo-tamanio: 3rem;
-
-
     --enlaces-tamanio: 1.2rem;
     --texto-peso-grueso: 700;
   
@@ -179,14 +172,13 @@
   }
 
   
-/* Agrega este estilo al final de tu archivo style.css */
 /* pie de página */
 .pie_de_pagina {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50px; /* Ajusta este valor según sea necesario */
+  margin-top: 120px; /* Ajusta este valor según sea necesario */
   padding-bottom: 20px; /* Agrega un espacio inferior */
   font-size: 2rem;
 }
